@@ -31,7 +31,8 @@ Il codice è organizzato nel seguente modo:
 - Salvataggio metriche aggregate in formato .json e .txt
 
 ## Installazione e utilizzo
-Per riprodurre il progetto, seguire questi passaggi:
+Per riprodurre il progetto, seguire questi passaggi.
+
 Assicurarsi di avere installato Python 3.12.11.
 
 Installare le dipendenze richieste eseguendo:  
@@ -56,6 +57,7 @@ e poi eseguire nuovamente:
 - FEEL-IT: la licenza si trova nella cartella licenses\.
 - MultiEmotions-It: licenza non esplicitata, dataset rilasciato per fini accademici nel contesto di un seminario universitario.
 - SENTIPOLC 2016: rilasciato da EVALITA 2016, disponibile per scopi di ricerca, nessuna licenza commerciale esplicita.
+
 
 
 
