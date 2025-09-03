@@ -1,0 +1,9 @@
+{
+    "model": "dbmdz/bert-base-italian-uncased",
+    "epochs_per_seed": 6,
+    "batch_size": 16,
+    "max_len": 160,
+    "seeds_run": 3,
+    "total_elapsed_min": 17.65,
+    "max_mem_gb": 5.39
+}

@@ -1,0 +1,165 @@
+Metriche della baseline
+Accuracy: 0.5128
+Macro-F1: 0.5095
+
+              precision    recall  f1-score   support
+
+           0       0.55      0.55      0.55      5354
+           1       0.47      0.47      0.47      4572
+
+    accuracy                           0.51      9926
+   macro avg       0.51      0.51      0.51      9926
+weighted avg       0.51      0.51      0.51      9926
+
+Distribuzione delle classi nei set di training e validation
+Training set: Positivi=46.06% | Negativi=53.94%
+Validation set: Positivi=46.12% | Negativi=53.88%
+
+ Inizio training con SEED = 42
+
+ Epoch 1/6 - Train Loss: 0.1965 | Val Loss: 0.1326 | Val F1: 0.8797
+
+ Epoch 2/6 - Train Loss: 0.1147 | Val Loss: 0.1221 | Val F1: 0.8941
+
+ Epoch 3/6 - Train Loss: 0.0721 | Val Loss: 0.1345 | Val F1: 0.8936
+
+ Epoch 4/6 - Train Loss: 0.0442 | Val Loss: 0.1705 | Val F1: 0.8849
+
+ Epoch 5/6 - Train Loss: 0.0253 | Val Loss: 0.1865 | Val F1: 0.8901
+
+ Epoch 6/6 - Train Loss: 0.0190 | Val Loss: 0.1962 | Val F1: 0.8936
+>>> Early stopping triggered, uso il best model precedente <<<
+
+ Run SEED=42 --> Accuracy=0.8892, Macro-F1=0.8882, ROC-AUC=0.9501, PR-AUC=0.9471, MCC=0.7769, Balanced Accuracy=0.8872
+  Class 0: Precision=0.8859, Recall=0.9123, Support=536.0
+  Class 1: Precision=0.8934, Recall=0.8621, Support=457.0
+
+Confusion Matrix:
+[[489  47]
+ [ 63 394]]
+False Positive Rate (FPR) = 0.0877 (8.77%)
+False Negative Rate (FNR) = 0.1379 (13.79%)
+
+ Error Analysis: le prime 10 frasi
+5: Text = LUSTRO AD UN´IMPRENDITORE FILIPPO DE CECCO CHE FA MANGIARE UN SACCO DI FAMIGLIE SENZA DI LUI L´ABRUZZO SAREBBE ULTERIORMENTE SPROFONDATO !!!
+   True label = 1, Predicted = 0, Prob = 0.2264
+6: Text = Stamattina me la prendo comoda...che di questi tempi è un vero lusso. Sono ancora in pigiama!
+   True label = 1, Predicted = 0, Prob = 0.4451
+17: Text = La nuova sala stampa di Palazzo Chigi by Mario Monti e' degna della sala funerali del Cimitero Verano!
+   True label = 0, Predicted = 1, Prob = 0.7287
+28: Text = Vorrei conoscere il genio che ha partorito questo spot. "Noi di Mediolanum siamo al vostro fianco" e invece di andare incontro alle esigenze del cliente e ad assisterlo in questo momento particolare, magari pensando a qualche agevolazione finanziaria, loro invece che fanno? Te chiedono i soldi! Complimenti, proprio un bel modo di "coccolare" il cliente
+   True label = 0, Predicted = 1, Prob = 0.7272
+34: Text = I miei migliori amici da oggi in poi saranno i fazzoletti &lt;33
+   True label = 0, Predicted = 1, Prob = 0.8202
+44: Text = #Grillo è un best teller, dubbio non v'è!Dice cose come le pensiamo tutti:questo non lo rende un politico moderno,semmai un tribuno antico.
+   True label = 1, Predicted = 0, Prob = 0.2859
+65: Text = @CorSport Finalmente un tifoso della Juve che ci capisce qualcosa...#DeLuca #Agnelli https://t.co/PVZcT7JqMz
+   True label = 1, Predicted = 0, Prob = 0.5116
+72: Text = Perché rispondere ai giornalisti che in Italia, in generale, non fanno #serviziopubblico? #Grillo fa bene a rispondere solo ai cittadini.
+   True label = 1, Predicted = 0, Prob = 0.1591
+74: Text = Il professor Monti spero legga almeno gli articoli dei suoi colleghi.Non lo faccia fare soltanto a me. grazie.
+   True label = 0, Predicted = 1, Prob = 0.6349
+87: Text = Non ci faccio nulla #conUnUnico pensiero Sei tanta roba,troppa!  #UnTemaAlGiorno
+   True label = 1, Predicted = 0, Prob = 0.3185
+
+ Inizio training con SEED = 123
+
+ Epoch 1/6 - Train Loss: 0.2045 | Val Loss: 0.1335 | Val F1: 0.8765
+
+ Epoch 2/6 - Train Loss: 0.1163 | Val Loss: 0.1271 | Val F1: 0.8813
+
+ Epoch 3/6 - Train Loss: 0.0723 | Val Loss: 0.1354 | Val F1: 0.8825
+
+ Epoch 4/6 - Train Loss: 0.0458 | Val Loss: 0.1606 | Val F1: 0.8892
+
+ Epoch 5/6 - Train Loss: 0.0287 | Val Loss: 0.1832 | Val F1: 0.8837
+
+ Epoch 6/6 - Train Loss: 0.0211 | Val Loss: 0.1903 | Val F1: 0.8839
+
+ Run SEED=123 --> Accuracy=0.8651, Macro-F1=0.8640, ROC-AUC=0.9374, PR-AUC=0.9358, MCC=0.7281, Balanced Accuracy=0.8634
+  Class 0: Precision=0.8681, Recall=0.8843, Support=536.0
+  Class 1: Precision=0.8613, Recall=0.8425, Support=457.0
+
+Confusion Matrix:
+[[474  62]
+ [ 72 385]]
+False Positive Rate (FPR) = 0.1157 (11.57%)
+False Negative Rate (FNR) = 0.1575 (15.75%)
+
+ Error Analysis: le prime 10 frasi
+9: Text = RT <MENTION_1> Esiste un sito di incontri per calzini spaiati.
+   True label = 1, Predicted = 0, Prob = 0.1834
+15: Text = Secondo me il governo Monti non sarà una sconfitta della politica, tutt'altro. Semmai sarà una sconfitta di certa lotta partitaria.
+   True label = 1, Predicted = 0, Prob = 0.3659
+28: Text = nessuno più dietro alla lavagna o fuori dalla porta #labuonascuola
+   True label = 1, Predicted = 0, Prob = 0.0901
+45: Text = Buona serata state a dieta ma Non troppo la marmellata contiene troppe calorie poi al mare buona serata a tutti
+   True label = 0, Predicted = 1, Prob = 0.6208
+49: Text = che #Grillo parli alla pancia della \"produttiva #Monza \" deve essere un segnale chiaro per chi ha tradito il tessuto produttivo del paese
+   True label = 1, Predicted = 0, Prob = 0.1857
+52: Text = Oggi bucatini Rummo alla pizzaiola.Saltava nel piatto
+   True label = 1, Predicted = 0, Prob = 0.2271
+71: Text = GIANANTONIO #STELLA: Non ci provino, a distinguere ancora figli e figliastri. Lo ricordino, Mario #Monti ed Elsa... <URL>
+   True label = 0, Predicted = 1, Prob = 0.6314
+97: Text = "La buona scuola Vs la scuola giusta" <URL>
+   True label = 0, Predicted = 1, Prob = 0.7181
+105: Text = <MENTION_1> la sappiamo fare anche in piedi però, alla faccia dei maschi!
+   True label = 1, Predicted = 0, Prob = 0.4569
+113: Text = @theamazer Quindi a tutti e 4,poker!Io non ricordo foto matrimonio,o coppia,che sicuramente ci saranno(state)ma della nonna austriaca foto da sola,con la madre,o figlie a Parigi,sempre bella, elegante,sempre con un velo di tristezza negli occhi che non l'ha mai abbandonata.
+   True label = 0, Predicted = 1, Prob = 0.5831
+
+ Inizio training con SEED = 999
+
+ Epoch 1/6 - Train Loss: 0.2039 | Val Loss: 0.1409 | Val F1: 0.8710
+
+ Epoch 2/6 - Train Loss: 0.1152 | Val Loss: 0.1496 | Val F1: 0.8818
+
+ Epoch 3/6 - Train Loss: 0.0701 | Val Loss: 0.1455 | Val F1: 0.8884
+
+ Epoch 4/6 - Train Loss: 0.0403 | Val Loss: 0.1876 | Val F1: 0.8911
+
+ Epoch 5/6 - Train Loss: 0.0222 | Val Loss: 0.2139 | Val F1: 0.8905
+
+ Epoch 6/6 - Train Loss: 0.0156 | Val Loss: 0.2219 | Val F1: 0.8887
+
+ Run SEED=999 --> Accuracy=0.8711, Macro-F1=0.8693, ROC-AUC=0.9407, PR-AUC=0.9400, MCC=0.7410, Balanced Accuracy=0.8674
+  Class 0: Precision=0.8566, Recall=0.9142, Support=536.0
+  Class 1: Precision=0.8907, Recall=0.8206, Support=457.0
+
+Confusion Matrix:
+[[490  46]
+ [ 82 375]]
+False Positive Rate (FPR) = 0.0858 (8.58%)
+False Negative Rate (FNR) = 0.1794 (17.94%)
+
+ Error Analysis: le prime 10 frasi
+27: Text = Votanti 306, 281 favorevoli, 25 contrari. Mario Monti incassa la fiducia al senato
+   True label = 1, Predicted = 0, Prob = 0.7129
+30: Text = Buongiorno e "buona scuola" a tutti... finalmente è proprio il caso di dirlo!
+   True label = 1, Predicted = 0, Prob = 0.7381
+31: Text = <MENTION_1> imponiglielo xD sono bionderrime e bellerrime e dskfhkdsjfsjsk *_*
+   True label = 1, Predicted = 0, Prob = 0.4861
+33: Text = È confortante sapere che il PD appoggerà il governo Monti nella realizzazione del programma del PdL! #portaaporta #orabasta #acasa
+   True label = 0, Predicted = 1, Prob = 0.8901
+58: Text = Paul: "Ringrazia il cielo sei su questo palco, ringrazia chi ti ci ha portato dentro" Ringo: Abbandona il palco. Paul: "Che succede?"
+   True label = 1, Predicted = 0, Prob = 0.5112
+67: Text = Mario Monti ai giornalisti: Che bella giornata! : ROMA, 13 NOV ? Mario Monti ha da poco lasciato il suo albergo... <URL>
+   True label = 1, Predicted = 0, Prob = 0.3681
+78: Text = Ma se #Grillo si diverte a provocare dicendo la verità pur non essendo un politico perché biasimarlo? Meglio i ladroni della #lega!
+   True label = 1, Predicted = 0, Prob = 0.0407
+91: Text = Ricordate un altro centrocampista di 17 anni così forte, così completo e così autorevole in mezzo a compagni e avversari che hanno pure il doppio della sua età? https://t.co/XFpjCEZejx
+   True label = 1, Predicted = 0, Prob = 0.5103
+94: Text = BUONGIORNO PUPEEEEEEEEEEEEEEE
+   True label = 1, Predicted = 0, Prob = 0.6196
+103: Text = GIANANTONIO #STELLA: Non ci provino, a distinguere ancora figli e figliastri. Lo ricordino, Mario #Monti ed Elsa... <URL>
+   True label = 0, Predicted = 1, Prob = 0.7673
+
+  Metriche aggregate finali
+Accuracy            : 0.8751 ± 0.0103
+Macro-F1            : 0.8738 ± 0.0104
+ROC-AUC             : 0.9427 ± 0.0054
+PR-AUC              : 0.9410 ± 0.0047
+MCC                 : 0.7487 ± 0.0206
+Balanced Accuracy   : 0.8727 ± 0.0104
+Class 0: Precision=0.8702 ± 0.0120, Recall=0.9036 ± 0.0137, Support avg=536
+Class 1: Precision=0.8818 ± 0.0146, Recall=0.8417 ± 0.0170, Support avg=457

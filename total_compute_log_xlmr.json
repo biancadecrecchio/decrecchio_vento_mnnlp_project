@@ -1,0 +1,9 @@
+{
+    "model": "xlm-roberta-base",
+    "epochs_per_seed": 6,
+    "batch_size": 16,
+    "max_len": 160,
+    "seeds_run": 3,
+    "total_elapsed_min": 31.54,
+    "max_mem_gb": 13.52
+}

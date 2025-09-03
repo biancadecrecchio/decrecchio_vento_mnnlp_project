@@ -1,0 +1,164 @@
+Metriche della baseline
+Accuracy: 0.5128
+Macro-F1: 0.5095
+
+              precision    recall  f1-score   support
+
+           0       0.55      0.55      0.55      5354
+           1       0.47      0.47      0.47      4572
+
+    accuracy                           0.51      9926
+   macro avg       0.51      0.51      0.51      9926
+weighted avg       0.51      0.51      0.51      9926
+
+Distribuzione delle classi nei set di training e validation
+Training set: Positivi=46.06% | Negativi=53.94%
+Validation set: Positivi=46.12% | Negativi=53.88%
+
+ Inizio training con SEED = 42
+
+ Epoch 1/6 - Train Loss: 0.2156 | Val Loss: 0.1689 | Val F1: 0.8682
+
+ Epoch 2/6 - Train Loss: 0.1352 | Val Loss: 0.1327 | Val F1: 0.8931
+
+ Epoch 3/6 - Train Loss: 0.1030 | Val Loss: 0.1390 | Val F1: 0.8891
+
+ Epoch 4/6 - Train Loss: 0.0781 | Val Loss: 0.1493 | Val F1: 0.8878
+
+ Epoch 5/6 - Train Loss: 0.0585 | Val Loss: 0.1681 | Val F1: 0.8935
+
+ Epoch 6/6 - Train Loss: 0.0457 | Val Loss: 0.1782 | Val F1: 0.8956
+
+ Run SEED=42 --> Accuracy=0.8731, Macro-F1=0.8725, ROC-AUC=0.9509, PR-AUC=0.9498, MCC=0.7450, Balanced Accuracy=0.8729
+  Class 0: Precision=0.8883, Recall=0.8750, Support=536.0
+  Class 1: Precision=0.8559, Recall=0.8709, Support=457.0
+
+Confusion Matrix:
+[[469  67]
+ [ 59 398]]
+False Positive Rate (FPR) = 0.1250 (12.50%)
+False Negative Rate (FNR) = 0.1291 (12.91%)
+
+ Error Analysis: le prime 10 frasi
+4: Text = uno striscione fuori scuola dice: \"se fossi un pittore ti dipingerei, se fossi un poeta ti loderei, ma sono un trombettiere\". AHAHAHAHAH
+   True label = 1, Predicted = 0, Prob = 0.3148
+5: Text = LUSTRO AD UN´IMPRENDITORE FILIPPO DE CECCO CHE FA MANGIARE UN SACCO DI FAMIGLIE SENZA DI LUI L´ABRUZZO SAREBBE ULTERIORMENTE SPROFONDATO !!!
+   True label = 1, Predicted = 0, Prob = 0.4980
+6: Text = Stamattina me la prendo comoda...che di questi tempi è un vero lusso. Sono ancora in pigiama!
+   True label = 1, Predicted = 0, Prob = 0.2938
+18: Text = I contagi aumentano, ma la gente aveva bisogno di svagarsi giusto? Avanti così bravi. #COVID19italia
+   True label = 0, Predicted = 1, Prob = 0.6005
+28: Text = Vorrei conoscere il genio che ha partorito questo spot. "Noi di Mediolanum siamo al vostro fianco" e invece di andare incontro alle esigenze del cliente e ad assisterlo in questo momento particolare, magari pensando a qualche agevolazione finanziaria, loro invece che fanno? Te chiedono i soldi! Complimenti, proprio un bel modo di "coccolare" il cliente
+   True label = 0, Predicted = 1, Prob = 0.8922
+34: Text = I miei migliori amici da oggi in poi saranno i fazzoletti &lt;33
+   True label = 0, Predicted = 1, Prob = 0.8948
+44: Text = #Grillo è un best teller, dubbio non v'è!Dice cose come le pensiamo tutti:questo non lo rende un politico moderno,semmai un tribuno antico.
+   True label = 1, Predicted = 0, Prob = 0.4792
+72: Text = Perché rispondere ai giornalisti che in Italia, in generale, non fanno #serviziopubblico? #Grillo fa bene a rispondere solo ai cittadini.
+   True label = 1, Predicted = 0, Prob = 0.1849
+74: Text = Il professor Monti spero legga almeno gli articoli dei suoi colleghi.Non lo faccia fare soltanto a me. grazie.
+   True label = 0, Predicted = 1, Prob = 0.7682
+87: Text = Non ci faccio nulla #conUnUnico pensiero Sei tanta roba,troppa!  #UnTemaAlGiorno
+   True label = 1, Predicted = 0, Prob = 0.0925
+
+ Inizio training con SEED = 123
+
+ Epoch 1/6 - Train Loss: 0.2168 | Val Loss: 0.1287 | Val F1: 0.8865
+
+ Epoch 2/6 - Train Loss: 0.1362 | Val Loss: 0.1208 | Val F1: 0.8935
+
+ Epoch 3/6 - Train Loss: 0.1037 | Val Loss: 0.1204 | Val F1: 0.9030
+
+ Epoch 4/6 - Train Loss: 0.0759 | Val Loss: 0.1327 | Val F1: 0.8966
+
+ Epoch 5/6 - Train Loss: 0.0576 | Val Loss: 0.1626 | Val F1: 0.8946
+
+ Epoch 6/6 - Train Loss: 0.0435 | Val Loss: 0.1726 | Val F1: 0.8936
+
+ Run SEED=123 --> Accuracy=0.8802, Macro-F1=0.8784, ROC-AUC=0.9462, PR-AUC=0.9468, MCC=0.7597, Balanced Accuracy=0.8763
+  Class 0: Precision=0.8626, Recall=0.9254, Support=536.0
+  Class 1: Precision=0.9043, Recall=0.8271, Support=457.0
+
+Confusion Matrix:
+[[496  40]
+ [ 79 378]]
+False Positive Rate (FPR) = 0.0746 (7.46%)
+False Negative Rate (FNR) = 0.1729 (17.29%)
+
+ Error Analysis: le prime 10 frasi
+6: Text = RICCARDO E NICOLETTA AVRETE PER SEMPRE IL MIO CUORE ♥️♥️♥️♥️♥️😭😭😭😭 #ilparadisodellesignore
+   True label = 1, Predicted = 0, Prob = 0.6085
+9: Text = RT <MENTION_1> Esiste un sito di incontri per calzini spaiati.
+   True label = 1, Predicted = 0, Prob = 0.1712
+15: Text = Secondo me il governo Monti non sarà una sconfitta della politica, tutt'altro. Semmai sarà una sconfitta di certa lotta partitaria.
+   True label = 1, Predicted = 0, Prob = 0.2951
+28: Text = nessuno più dietro alla lavagna o fuori dalla porta #labuonascuola
+   True label = 1, Predicted = 0, Prob = 0.2611
+45: Text = Buona serata state a dieta ma Non troppo la marmellata contiene troppe calorie poi al mare buona serata a tutti
+   True label = 0, Predicted = 1, Prob = 0.7955
+46: Text = | E' quando ti accorgi di essere geloso anche di un cazzo di mi piace che realizzi quanto hai paura di perdere qualcuno..
+   True label = 0, Predicted = 1, Prob = 0.7234
+49: Text = che #Grillo parli alla pancia della \"produttiva #Monza \" deve essere un segnale chiaro per chi ha tradito il tessuto produttivo del paese
+   True label = 1, Predicted = 0, Prob = 0.1758
+50: Text = Con #Grillo sembra tutto facile <URL> #blog #politicapalazzo #beppegrillo #cultura
+   True label = 1, Predicted = 0, Prob = 0.6437
+52: Text = Oggi bucatini Rummo alla pizzaiola.Saltava nel piatto
+   True label = 1, Predicted = 0, Prob = 0.3869
+97: Text = "La buona scuola Vs la scuola giusta" <URL>
+   True label = 0, Predicted = 1, Prob = 0.8021
+
+ Inizio training con SEED = 999
+
+ Epoch 1/6 - Train Loss: 0.2092 | Val Loss: 0.1673 | Val F1: 0.8682
+
+ Epoch 2/6 - Train Loss: 0.1382 | Val Loss: 0.1271 | Val F1: 0.8901
+
+ Epoch 3/6 - Train Loss: 0.1078 | Val Loss: 0.1219 | Val F1: 0.8976
+
+ Epoch 4/6 - Train Loss: 0.0840 | Val Loss: 0.1375 | Val F1: 0.8984
+
+ Epoch 5/6 - Train Loss: 0.0640 | Val Loss: 0.1440 | Val F1: 0.9009
+
+ Epoch 6/6 - Train Loss: 0.0493 | Val Loss: 0.1598 | Val F1: 0.8999
+
+ Run SEED=999 --> Accuracy=0.8651, Macro-F1=0.8649, ROC-AUC=0.9468, PR-AUC=0.9470, MCC=0.7328, Balanced Accuracy=0.8676
+  Class 0: Precision=0.9069, Recall=0.8358, Support=536.0
+  Class 1: Precision=0.8236, Recall=0.8993, Support=457.0
+
+Confusion Matrix:
+[[448  88]
+ [ 46 411]]
+False Positive Rate (FPR) = 0.1642 (16.42%)
+False Negative Rate (FNR) = 0.1007 (10.07%)
+
+ Error Analysis: le prime 10 frasi
+6: Text = Governo Monti. Totò ministri: Amato, Formigoni... Il nuovo che avanza, dopo Berlusconi... Che amarezza!
+   True label = 0, Predicted = 1, Prob = 0.7368
+8: Text = Vi sto inseguendo per disdire happy black e me la dovete disdire gratuitamente non a 3 euro subito!
+   True label = 0, Predicted = 1, Prob = 0.6567
+17: Text = Quello della Ferrari non è fallimento, siamo purtroppo ben oltre... #BelgianGP
+   True label = 0, Predicted = 1, Prob = 0.6581
+27: Text = Votanti 306, 281 favorevoli, 25 contrari. Mario Monti incassa la fiducia al senato
+   True label = 1, Predicted = 0, Prob = 0.3403
+33: Text = È confortante sapere che il PD appoggerà il governo Monti nella realizzazione del programma del PdL! #portaaporta #orabasta #acasa
+   True label = 0, Predicted = 1, Prob = 0.7038
+43: Text = A parte che sono americani e non più italiani ,, il miglior spot in questo momento e : regalare un Po di pasta ai cittadini . O comprare mascherine , noi non vogliamo che e i cinesi si prendano l italia, Noi sappiamo che italia e un paese che fa gola , non per il mangiare
+   True label = 0, Predicted = 1, Prob = 0.7571
+45: Text = Unidentified Flying Object o Unknown Flying Object: MARIO MONTI È UN ESPERTO DI IPNOSI CONVERSAZIONALE... <URL>
+   True label = 0, Predicted = 1, Prob = 0.7515
+51: Text = #spread Sono giorni duri. In attesa del governo #Monti niente ansiolitici, ma un video (Giovenzana <MENTION_1> <URL>
+   True label = 0, Predicted = 1, Prob = 0.8008
+70: Text = Cosa vuoi dire, se non LEGGENDA?#Nadal #RG20
+   True label = 1, Predicted = 0, Prob = 0.4894
+78: Text = Ma se #Grillo si diverte a provocare dicendo la verità pur non essendo un politico perché biasimarlo? Meglio i ladroni della #lega!
+   True label = 1, Predicted = 0, Prob = 0.0869
+
+  Metriche aggregate finali
+Accuracy            : 0.8728 ± 0.0062
+Macro-F1            : 0.8719 ± 0.0056
+ROC-AUC             : 0.9480 ± 0.0021
+PR-AUC              : 0.9478 ± 0.0014
+MCC                 : 0.7459 ± 0.0110
+Balanced Accuracy   : 0.8723 ± 0.0036
+Class 0: Precision=0.8859 ± 0.0182, Recall=0.8787 ± 0.0367, Support avg=536
+Class 1: Precision=0.8613 ± 0.0331, Recall=0.8658 ± 0.0297, Support avg=457
